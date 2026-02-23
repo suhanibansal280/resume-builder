@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Build Resume</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+
+<body>
+
+<h1 style="text-align:center">Fill Your Details</h1>
+
+<div class="form">
+
+<input id="name" placeholder="Name">
+<input id="phone" placeholder="Phone">
+<input id="email" placeholder="Email">
+<input id="instituteName" placeholder="Institute Name">
+
+<label>Upload Photo</label>
+<input type="file" id="photo">
+
+<label>Upload Institute Logo</label>
+<input type="file" id="logo">
+
+<textarea id="about" placeholder="About Me"></textarea>
+<textarea id="skills" placeholder="Skills"></textarea>
+<textarea id="education" placeholder="Education"></textarea>
+<textarea id="extra" placeholder="Extra Curriculum"></textarea>
+
+<button onclick="generate()">Preview Resume</button>
+<button onclick="downloadPDF()">Download Resume</button>
+
+</div>
+
+<div id="resume"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
